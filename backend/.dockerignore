@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.env
+*.venv
+.env
+.envrc
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Git
+.git
+.gitignore
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
