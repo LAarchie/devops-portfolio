@@ -16,8 +16,8 @@ def hello_api():
 def check_health():
     return jsonify({"status": "healthy"}), 200
 
-@main.route('/api/log-test', methods=['POST'])
-def log_test():
+@main.route('/api/log-button', methods=['POST'])
+def log():
     data = request.get_json()
     message = data.get('message')
 
