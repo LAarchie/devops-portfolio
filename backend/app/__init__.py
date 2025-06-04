@@ -2,6 +2,7 @@ from flask import Flask
 from .routes import main
 from flask_cors import CORS
 
+
 def create_app():
     """
     Create and configure the Flask application.
@@ -13,7 +14,7 @@ def create_app():
     Returns:
         Flask: The configured Flask application instance.
     """
-    
+
     app = Flask(__name__)
     CORS(app, resources={r"/api/*": {"origins": "http://localhost:8080"}})
     app.register_blueprint(main)
